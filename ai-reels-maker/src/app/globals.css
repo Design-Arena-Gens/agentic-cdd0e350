@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --background: 249 100% 99%;
+  --foreground: 243 58% 8%;
+  --muted: 249 30% 95%;
+  --muted-foreground: 240 10% 50%;
+  --card: 0 0% 100%;
+  --card-foreground: 243 58% 8%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 243 58% 8%;
+  --primary: 262 83% 58%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 263 84% 94%;
+  --secondary-foreground: 263 65% 35%;
+  --accent: 187 100% 63%;
+  --accent-foreground: 243 58% 8%;
+  --border: 259 65% 88%;
+  --input: 249 30% 92%;
+  --ring: 262 83% 58%;
+  --glass: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.18);
+}
+
+.dark {
+  color-scheme: dark;
+  --background: 243 60% 4%;
+  --foreground: 0 0% 98%;
+  --muted: 243 30% 12%;
+  --muted-foreground: 240 5% 66%;
+  --card: 243 55% 6%;
+  --card-foreground: 0 0% 100%;
+  --popover: 243 55% 5%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 265 88% 65%;
+  --primary-foreground: 260 100% 98%;
+  --secondary: 240 25% 20%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 182 94% 70%;
+  --accent-foreground: 256 72% 96%;
+  --border: 243 45% 18%;
+  --input: 244 40% 18%;
+  --ring: 265 88% 68%;
+  --glass: rgba(15, 16, 35, 0.65);
+  --glass-border: rgba(124, 58, 237, 0.35);
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-smooth: always;
+}
+
+.glass {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+}
+
+.grid-overlay {
+  background-image: radial-gradient(circle, rgba(124, 58, 237, 0.18) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.55), transparent 65%);
+}
+
+.text-gradient {
+  background: linear-gradient(120deg, #8c5eff 0%, #50f0ff 50%, #ff64d2 100%);
+  background-clip: text;
+  color: transparent;
+}
